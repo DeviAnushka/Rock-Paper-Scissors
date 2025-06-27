@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+    
+}
+
+body {
+      background-image: url('images/bgi-2.jpg'); /* replace with your image file name or URL */
+      background-size: cover; /* makes image cover the whole background */
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-bottom: 15rem;
+    }
+h1{
+    background-color: #2f3e46;
+    color:white;
+    height:5rem;
+    line-height:5rem;
+    font-size:3rem
+}
+.choice{
+    height: 165px;
+    width:165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: #2f3e46;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    margin-top: 5rem;
+
+}
+
+.score-board{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+    font-size: 2rem;
+    margin-top: 4rem;
+    gap:9rem;
+}
+
+.user-score{
+    font-size: 5rem;
+    color: #eae0d5;
+    margin-right: 15rem;
+    margin-left: 10rem ;
+    
+}
+.comp-score{
+    font-size: 5rem;
+    color: #eae0d5;
+    margin-left: 28rem;
+    margin-right: 10rem ;
+}
+
+
+.msg-container{
+     margin-top: 5rem;
+    
+}
+#msg{
+    
+    background-color: #2f3e46;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+/* Animation when user clicks */
+.choice.clicked {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 20px #ffc404;
+}
+
+/* Animation for computer choice highlight */
+.choice.flash {
+    box-shadow: 0 0 25px red;
+    transition: box-shadow 0.3s ease;
+}
